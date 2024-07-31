@@ -10,12 +10,17 @@
 Chiaki is a Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play
 for Linux, FreeBSD, OpenBSD, NetBSD, Android, macOS, Windows, Nintendo Switch and potentially even more platforms.
 
-![Screenshot](assets/screenshot.png)
-
-## Project Status
+## Project Status and Contributing
 
 As all relevant features are implemented, this project is considered to be finished and in maintenance mode only.
-No major updates are planned and contributions are only accepted in special cases.
+No major updates are planned and contributions are only accepted in special cases such as security issues.
+The objective is to keep a stable base and not break existing support for less mainstream platforms such as BSDs.
+
+**For a more active, fast moving and community-oriented project, refer
+to [chiaki-ng](https://streetpea.github.io/chiaki-ng/) ("next generation").
+If you would like to contribute, this will likely also be the best place to do so.**
+
+![Screenshot](assets/screenshot.png)
 
 ## Installing
 
