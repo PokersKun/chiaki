@@ -38,17 +38,17 @@ const char *chiaki_rp_application_reason_string(uint32_t reason)
 	switch(reason)
 	{
 		case CHIAKI_RP_APPLICATION_REASON_REGIST_FAILED:
-			return "Regist failed, probably invalid PIN";
+			return "注册失败，可能是无效的 PIN 码";
 		case CHIAKI_RP_APPLICATION_REASON_INVALID_PSN_ID:
-			return "Invalid PSN ID";
+			return "无效的 PSN ID";
 		case CHIAKI_RP_APPLICATION_REASON_IN_USE:
-			return "Remote is already in use";
+			return "远程功能已在使用中";
 		case CHIAKI_RP_APPLICATION_REASON_CRASH:
-			return "Remote Play on Console crashed";
+			return "控制台上的远程播放崩溃";
 		case CHIAKI_RP_APPLICATION_REASON_RP_VERSION:
-			return "RP-Version mismatch";
+			return "远程播放版本不匹配";
 		default:
-			return "unknown";
+			return "未知错误";
 	}
 }
 
@@ -137,32 +137,32 @@ CHIAKI_EXPORT const char *chiaki_quit_reason_string(ChiakiQuitReason reason)
 	switch(reason)
 	{
 		case CHIAKI_QUIT_REASON_STOPPED:
-			return "Stopped";
+			return "已停止";
 		case CHIAKI_QUIT_REASON_SESSION_REQUEST_UNKNOWN:
-			return "Unknown Session Request Error";
+			return "未知的会话请求错误";
 		case CHIAKI_QUIT_REASON_SESSION_REQUEST_CONNECTION_REFUSED:
-			return "Connection Refused in Session Request";
+			return "会话请求连接被拒绝";
 		case CHIAKI_QUIT_REASON_SESSION_REQUEST_RP_IN_USE:
-			return "Remote Play on Console is already in use";
+			return "控制台的远程游玩已在使用中";
 		case CHIAKI_QUIT_REASON_SESSION_REQUEST_RP_CRASH:
-			return "Remote Play on Console has crashed";
+			return "控制台的远程游玩已崩溃";
 		case CHIAKI_QUIT_REASON_SESSION_REQUEST_RP_VERSION_MISMATCH:
-			return "RP-Version mismatch";
+			return "远程游玩版本不匹配";
 		case CHIAKI_QUIT_REASON_CTRL_UNKNOWN:
-			return "Unknown Ctrl Error";
+			return "未知的控制错误";
 		case CHIAKI_QUIT_REASON_CTRL_CONNECTION_REFUSED:
-			return "Connection Refused in Ctrl";
+			return "控制连接被拒绝";
 		case CHIAKI_QUIT_REASON_CTRL_CONNECT_FAILED:
-			return "Ctrl failed to connect";
+			return "控制连接失败";
 		case CHIAKI_QUIT_REASON_STREAM_CONNECTION_UNKNOWN:
-			return "Unknown Error in Stream Connection";
+			return "流连接中的未知错误";
 		case CHIAKI_QUIT_REASON_STREAM_CONNECTION_REMOTE_DISCONNECTED:
-			return "Remote has disconnected from Stream Connection";
+			return "远程已断开流连接";
 		case CHIAKI_QUIT_REASON_STREAM_CONNECTION_REMOTE_SHUTDOWN:
-			return "Remote has disconnected from Stream Connection the because Server shut down";
+			return "由于服务器关闭，远程已断开流连接";
 		case CHIAKI_QUIT_REASON_NONE:
 		default:
-			return "Unknown";
+			return "未知";
 	}
 }
 

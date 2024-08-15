@@ -49,7 +49,7 @@ class Settings
 		// the goal is to read/write inernal flat configuration file
 		const std::map<Settings::ConfigurationItem, std::regex> re_map = {
 			{HOST_NAME, std::regex("^\\[\\s*(.+)\\s*\\]")},
-			{HOST_ADDR, std::regex("^\\s*host_(?:ip|addr)\\s*=\\s*\"?([^\"]*)\"?")},
+			{HOST_ADDR, std::regex("^\\s*host_(?:ip|addr)\\s*=\\s*\"?((((25[0-5])|(2[0-4]\\d)|(1\\d\\d)|([1-9]\\d)|\\d)(\\.((25[0-5])|(2[0-4]\\d)|(1\\d\\d)|([1-9]\\d)|\\d)){3})|([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+\\.?))\"?")},
 			{PSN_ONLINE_ID, std::regex("^\\s*psn_online_id\\s*=\\s*\"?([\\w_-]+)\"?")},
 			{PSN_ACCOUNT_ID, std::regex("^\\s*psn_account_id\\s*=\\s*\"?([\\w/=+]+)\"?")},
 			{RP_KEY, std::regex("^\\s*rp_key\\s*=\\s*\"?([\\w/=+]+)\"?")},

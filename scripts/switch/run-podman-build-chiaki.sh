@@ -6,5 +6,5 @@ podman run --rm \
 	-v "`pwd`:/build/chiaki" \
 	-w "/build/chiaki" \
 	-it \
-	thestr4ng3r/chiaki-build-switch:v2 \
+	docker.io/thestr4ng3r/chiaki-build-switch:v2 \
 	${1:-/bin/bash -c "scripts/switch/build.sh"}
